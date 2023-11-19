@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>About the App</title>
+
+  <style>
+    .center {
+      text-align: center;
+      display: none;
+    }
+  </style>
+
+<script>
+  function toggleVisibility(elementId) {
+    var element = document.getElementById(elementId);
+    if (element.style.display === 'none' || element.style.display === '') {
+      element.style.display = 'block';
+    } else {
+      element.style.display = 'none';
+    }
+  }
+</script>
+
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="model_about.html">ABOUT THE MODEL</a></li>
+          <li><a href="app_about.html">ABOUT THE APP</a></li>
+          <li><a href="creators_about.html">CREATORS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="image-section">
+      <div class="container">
+        <h2 style="margin-top: 5px; margin-bottom: 0;">Condition</h2>
+        <p>Early Blight</p>
+        <img src="../assets/PotatoEarlyBlight2.JPG" alt="Image 1">
+        <h2 style="margin: 5px;">Plant's Scientific denomination</h2>
+        <p>Solanum tuberosum</p>
+        <h2 style="margin: 5px;">Plant's common denomination</h2>
+        <p>Potato</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('aboutCondition')">About the condition</h2>
+        <p id="aboutCondition" class="center">Early Blight is a common fungal disease in potatoes caused by the fungus Alternaria solani.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('lifecycle')">Life Cycle</h2>
+        <p id="lifecycle" class="center">Early Blight spreads through spores produced on infected plant debris, soil, or other contaminated materials. Warm and humid conditions favor its development.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('symptoms')">Symptoms</h2>
+        <p id="symptoms" class="center">The disease primarily affects the leaves of the potato plant. It starts with the appearance of small, dark brown lesions with concentric rings, resembling a target. These lesions may expand and merge, leading to the browning and wilting of leaves. In severe cases, it can affect stems and tubers.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('impact')">Impact</h2>
+        <p id="impact" class="center">The disease can reduce the photosynthetic area of the leaves, affecting the plant's ability to produce energy. Severe infections may lead to reduced yield and quality of potato tubers.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('treatmentrecomendations')">Treatment recomendations</h2>
+        <p id="treatmentrecomendations" class="center">1. Remove and destroy any infected plant material to reduce the source of spores; 2. Application of fungicides containing active ingredients like chlorothalonil, mancozeb, or copper-based compounds can help manage Early Blight. Regular and timely application, following recommended dosage and schedule, is essential for effectiveness.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('preventionstrategies')">Prevention long term strategies</h2>
+        <p id="preventionstrategies" class="center">1. Planting potato varieties that are resistant or less susceptible to Early Blight can be an effective long-term strategy. Resistant varieties are bred to withstand the disease, reducing the need for extensive chemical treatments; 2. Practicing crop rotation helps disrupt the disease cycle. Avoid planting potatoes or other susceptible crops in the same location for consecutive growing seasons; 3. Planting potatoes with adequate spacing promotes better air circulation, reducing the humidity around the plants. This can create an environment less favorable for the development and spread of Early Blight; 4. Regularly inspect the potato plants for symptoms of Early Blight. Promptly remove and destroy infected leaves and plant debris to limit the source of spores; 5. Applying organic mulch around the base of the potato plants can help prevent soil splash, which may carry fungal spores. Mulching also helps maintain consistent soil moisture; 6. Watering at the base of the plants instead of using overhead irrigation can minimize leaf wetness, creating an environment less conducive to fungal growth; 7. Practices such as proper field sanitation, weed control, and balanced fertilization contribute to overall plant health and resilience against diseases.</p>
+        
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>About the App</title>
+
+  <style>
+    .center {
+      text-align: center;
+      display: none;
+    }
+  </style>
+
+<script>
+  function toggleVisibility(elementId) {
+    var element = document.getElementById(elementId);
+    if (element.style.display === 'none' || element.style.display === '') {
+      element.style.display = 'block';
+    } else {
+      element.style.display = 'none';
+    }
+  }
+</script>
+
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="model_about.html">ABOUT THE MODEL</a></li>
+          <li><a href="app_about.html">ABOUT THE APP</a></li>
+          <li><a href="creators_about.html">CREATORS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="image-section">
+      <div class="container">
+        <h2 style="margin-top: 5px; margin-bottom: 0;">Condition</h2>
+        <p>Gray Leaf Spot</p>
+        <img src="../assets/Corn_Maize Gray_Leaf_Spot 13.jpg" alt="Image 1">
+        <h2 style="margin: 5px;">Plant's Scientific denomination</h2>
+        <p>Zea mays</p>
+        <h2 style="margin: 5px;">Plant's common denomination</h2>
+        <p>Corn</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('aboutCondition')">About the condition</h2>
+        <p id="aboutCondition" class="center">Plant disease caused by a fungus called Cercospora zeae-maydis. The fungus usually enters the leaves of corn plants through small wounds or natural openings.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('lifecycle')">Life Cycle</h2>
+        <p id="lifecycle" class="center">The fungus can survive on crop debris, and spores produced in infected leaves can be spread by wind, rain, or contact.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('symptoms')">Symptoms</h2>
+        <p id="symptoms" class="center">The most noticeable symptom is the appearance of small, rectangular lesions on the leaves. These lesions start as tiny, water-soaked spots and gradually enlarge, turning gray or tan with a dark border. In severe cases, the lesions can coalesce, covering large portions of the leaf surface.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('impact')">Impact</h2>
+        <p id="impact" class="center">Gray Leaf Spot can reduce the photosynthetic area of the leaves, affecting the plant's ability to produce energy through photosynthesis. This can lead to reduced yield and overall plant health if not properly managed.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('treatmentrecomendations')">Treatment recomendations</h2>
+        <p id="treatmentrecomendations" class="center">1. Fungicides containing triazole compounds (e.g., azoxystrobin, propiconazole, and tebuconazole) are effective against Gray Leaf Spot. These can be applied preventively or when symptoms first appear; 2. Fungicides like pyraclostrobin and azoxystrobin, which belong to the strobilurin class, provide good control of Gray Leaf Spot; 3. Combination products, which combine active ingredients from different classes, can provide a broad-spectrum control.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('preventionstrategies')">Prevention long term strategies</h2>
+        <p id="preventionstrategies" class="center">1. Crop rotation and tillage can help reduce the survival of the fungus; 2. Planting corn at wider row spacings can improve air circulation, creating an environment less favorable for disease development; 3. Using corn varieties with genetic resistance to Gray Leaf Spot can be an effective management strategy; 4. Regularly monitor corn fields for symptoms of Gray Leaf Spot and implementing a fungicide treatment at the first sign of infection can help prevent the disease from spreading; Note: Applying fungicidal seed treatments can protect young plants from early-season infections; 5. Adequate levels of certain nutrients, particularly nitrogen, can contribute to plant health and resilience against diseases. However, nutrient management should be based on soil tests and crop needs.</p>
+        
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

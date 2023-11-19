@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>About the App</title>
+
+  <style>
+    .center {
+      text-align: center;
+      display: none;
+    }
+  </style>
+
+<script>
+  function toggleVisibility(elementId) {
+    var element = document.getElementById(elementId);
+    if (element.style.display === 'none' || element.style.display === '') {
+      element.style.display = 'block';
+    } else {
+      element.style.display = 'none';
+    }
+  }
+</script>
+
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="model_about.html">ABOUT THE MODEL</a></li>
+          <li><a href="app_about.html">ABOUT THE APP</a></li>
+          <li><a href="creators_about.html">CREATORS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="image-section">
+      <div class="container">
+        <h2 style="margin-top: 5px; margin-bottom: 0;">Condition</h2>
+        <p>Leaf Scorch</p>
+        <img src="../assets/Strawberry Leaf_Scorch_1.jpg" alt="Image 1">
+        <h2 style="margin: 5px;">Plant's Scientific denomination</h2>
+        <p>Fragaria x ananassa</p>
+        <h2 style="margin: 5px;">Plant's common denomination</h2>
+        <p>Strawberry</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('aboutCondition')">About the condition</h2>
+        <p id="aboutCondition" class="center">Condition often caused by various environmental factors or diseases such as:ntense sunlight and high temperatures, fungal diseases, such as leaf spot or anthracnose, can cause leaf scorch, inconsistent or inadequate watering, poor soil conditions (such as overly compacted soil or soil with insufficient nutrients) and excessive amounts applied od certain chemicals or fertilizers.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('symptoms')">Symptoms</h2>
+        <p id="symptoms" class="center">Leaf scorch in strawberries is a condition characterized by the browning or yellowing of leaf margins and the spaces between veins. This discoloration often resembles the effect of leaves being scorched by heat or drought. The affected areas may also show necrosis, or cell death, leading to a dry and crispy texture.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('treatmentrecomendations')">Treatment recomendations</h2>
+        <p id="treatmentrecomendations" class="center">1. Promptly remove and destroy any infected or damaged plant material; 2. If fungal diseases are contributing to leaf scorch, first, identify the specific fungal pathogens causing the issue. Afterwards, apply fungicides containing appropriate active ingredients, such as copper-based fungicides, following recommended guidelines; Note: Have in consideration the prevention techniques when the cause for the condition is not caused by fungal infection.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('preventionstrategies')">Prevention long term strategies</h2>
+        <p id="preventionstrategies" class="center">1. Ensure strawberries receive consistent and adequate water, especially during dry and hot periods; 2. Provide some shade during intense sunlight, particularly in regions with hot climates; 3. Maintain well-draining and nutrient-rich soil for optimal plant health; 4. Ensuring good air circulation around strawberry plants helps prevent the development of fungal diseases. Proper spacing and pruning can contribute to better airflow; 5. Apply appropriate fungicides or treatments to prevent or manage fungal diseases and follow recommended guidelines for fertilization to avoid chemical burn; 6. Planting strawberry varieties that are resistant to common fungal diseases can be a proactive measure.</p>
+        
+      </div>
+    </section>
+  </main>
+ 
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>About the App</title>
+
+  <style>
+    .center {
+      text-align: center;
+      display: none;
+    }
+  </style>
+
+<script>
+  function toggleVisibility(elementId) {
+    var element = document.getElementById(elementId);
+    if (element.style.display === 'none' || element.style.display === '') {
+      element.style.display = 'block';
+    } else {
+      element.style.display = 'none';
+    }
+  }
+</script>
+
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="model_about.html">ABOUT THE MODEL</a></li>
+          <li><a href="app_about.html">ABOUT THE APP</a></li>
+          <li><a href="creators_about.html">CREATORS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="image-section">
+      <div class="container">
+        <h2 style="margin-top: 5px; margin-bottom: 0;">Condition</h2>
+        <p>Cedar Rust</p>
+        <img src="../assets/AppleCedarRust4.JPG" alt="Image 1">
+        <h2 style="margin: 5px;">Plant's Scientific denomination</h2>
+        <p>Malus domestica</p>
+        <h2 style="margin: 5px;">Plant's common denomination</h2>
+        <p>Apple</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('aboutCondition')">About the condition</h2>
+        <p id="aboutCondition" class="center">Cedar Rust is a plant disease caused by a group of fungi, particularly the cedar apple rust fungus (Gymnosporangium juniperi-virginianae).</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('lifecycle')">Life Cycle</h2>
+        <p id="lifecycle" class="center">The cedar apple rust fungus has a complex life cycle that requires both types of hosts to complete its life stages. Spores produced on infected cedar or juniper trees can travel through the air and infect apple or related fruit trees (e.g., crabapple) during the growing season.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('symptoms')">Symptoms</h2>
+        <p id="symptoms" class="center">Cedar rust symptoms typically appear as small, yellow-orange spots or lesions on leaves, fruit, and sometimes stems. As the disease progresses, these spots can enlarge and develop a distinctive rusty or orange color.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('impact')">Impact</h2>
+        <p id="impact" class="center">Cedar rust can lead to defoliation, reduced fruit quality, and, in severe cases, impact the overall health of apple trees.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('treatmentrecomendations')">Treatment recomendations</h2>
+        <p id="treatmentrecomendations" class="center">1. Remove and destroy any infected plant material, such as leaves and fruit, to reduce the source of spores; 2. Additionally, fungicides can be applied to apple trees as a preventive measure or when symptoms first appear. Common fungicides used for cedar apple rust control include those containing active ingredients like myclobutanil, triadimefon, or sulfur. It's essential to follow the recommended application rates and schedules provided by the fungicide manufacturer. If you would like a more organic option for controlling cedar apple rust you can use neem oil, derived from the neem tree, which has antifungal properties; Note: If you would like a more organic option for controlling cedar apple rust you can use neem oil, derived from the neem tree, which has antifungal properties.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('preventionstrategies')">Prevention long term strategies</h2>
+        <p id="preventionstrategies" class="center">1. Using apple tree varieties that are resistant to cedar rust; 2. Pruning can improve air circulation and sunlight penetration can help reduce the favorable conditions for cedar apple rust; 3. Removing nearby cedar or juniper trees can help break the cedar apple rust life cycle by eliminating one of the required hosts; 4. Fungicides can be applied to apple trees as a preventive measure; 5. Copper-based fungicides can be used as a preventive measure. They create a protective barrier on the plant surfaces; 6. Avoid overhead watering, as wet foliage provides a favorable environment for fungal growth. Instead, water at the base of the tree; 7. Regularly monitor apple trees for symptoms of cedar apple rust, and apply treatments at the earliest sign of infection.</p>
+      </div>
+    </section>
+  </main>
+
+</body>
+</html>

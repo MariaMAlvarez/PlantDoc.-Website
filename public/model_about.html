@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>About the Model</title>
+
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="model_about.html">ABOUT THE MODEL</a></li>
+          <li><a href="app_about.html">ABOUT THE APP</a></li>
+          <li><a href="creators_about.html">CREATORS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="about-model-section">
+      <div class="container">
+        <h1>Convolutional Neural Networks (CNNs)</h1>
+        <p class="justify">Convolutional Neural Networks (CNNs) are a type of algorithm used for the detection and classification of features. They are particularly effective in analyzing spatial data, such as images. CNNs employ convolutional layers to extract prominent features from images, followed by pooling to compress the feature map and prevent overfitting. These steps can be repeated multiple times to enhance the model's performance. The output is flattened and processed through fully connected neural networks. CNNs have various applications, including the detection and classification of plant infections based on leaf images.</p>
+        <p class="justify">A confusion matrix was created to assess the model's performance. The matrix reveals that the model exhibits excellent predictive capabilities with high accuracy. The strong diagonal pattern in the matrix indicates that the majority of labels were predicted correctly. This confirms the effectiveness of the model in accurately identifying and classifying the data.</p>
+        <img src="../assets/confusion_matrix.png" alt="Confusion Matrix">
+      </div>
+    </section>
+  </main>
+</body>
+</html>

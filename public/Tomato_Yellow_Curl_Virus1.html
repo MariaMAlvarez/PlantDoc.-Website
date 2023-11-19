@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../styles.css">
+  <title>About the App</title>
+
+  <style>
+    .center {
+      text-align: center;
+      display: none;
+    }
+  </style>
+
+<script>
+  function toggleVisibility(elementId) {
+    var element = document.getElementById(elementId);
+    if (element.style.display === 'none' || element.style.display === '') {
+      element.style.display = 'block';
+    } else {
+      element.style.display = 'none';
+    }
+  }
+</script>
+
+
+</head>
+<body>
+  <header>
+    <div class="top-bar">
+      <div class="logo">
+        <a href="../index.html">
+          <img src="../assets/logo.png" alt="Logo">
+        </a>
+      </div>
+      <nav>
+        <ul>
+          <li><a href="model_about.html">ABOUT THE MODEL</a></li>
+          <li><a href="app_about.html">ABOUT THE APP</a></li>
+          <li><a href="creators_about.html">CREATORS</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section id="image-section">
+      <div class="container">
+        <h2 style="margin-top: 5px; margin-bottom: 0;">Condition</h2>
+        <p>Yellow Curl Virus</p>
+        <img src="../assets/TomatoYellowCurlVirus1.JPG" alt="Image 1">
+        <h2 style="margin: 5px;">Plant's Scientific denomination</h2>
+        <p>Solanum lycopersicum</p>
+        <h2 style="margin: 5px;">Plant's common denomination</h2>
+        <p>Tomato</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('aboutCondition')">About the condition</h2>
+        <p id="aboutCondition" class="center">Yellow Curl Virus, often referred to as Tomato Yellow Leaf Curl Virus (TYLCV), is a viral infection that affects tomato plants. It is caused by a group of viruses belonging to the genus Begomovirus.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('lifecycle')">Life Cycle</h2>
+        <p id="lifecycle" class="center">Whiteflies (Bemisia tabaci), tiny insects that feed on the sap of plants, transmit the virus when they feed on an infected plant and then move to a healthy one.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('symptoms')">Symptoms</h2>
+        <p id="symptoms" class="center">The most noticeable symptom is the yellowing (which usually starts from the lower leaves and progresses upward) and upward curling of tomato leaves, particularly the younger ones. The leaf curling is also often accompanied by a reduction in leaf size, giving the plant a stunted appearance.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('impact')">Impact</h2>
+        <p id="impact" class="center">TYLCV can severely affect tomato plants. Infected plants may produce fewer fruits, and the quality of the fruits can be compromised.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('treatmentrecomendations')">Treatment recomendations</h2>
+        <p id="treatmentrecomendations" class="center">1. Promptly remove and destroy infected plants to prevent the spread of the virus to healthy plants; 2. No specific antiviral treatment available; Note: Viral infections in plants are generally challenging to manage directly because once a plant is infected, the virus replicates within the plant cells, making it difficult to target the virus without harming the plant. The primary focus in managing viral diseases in plants, including TYLCV, involves preventive measures and strategies to reduce the spread and impact of the virus.</p>
+        <h2 style="margin-top: 10px;" onclick="toggleVisibility('preventionstrategies')">Prevention long term strategies</h2>
+        <p id="preventionstrategies" class="center">1. Planting tomato varieties that are resistant to TYLCV is a crucial preventive measure. Many agricultural research programs have developed TYLCV-resistant tomato varieties; 2. Since whiteflies transmit TYLCV, controlling whitefly populations is essential. On the one hand, by using chemical insecticides can be used to manage whiteflies. However, it's crucial to choose products that are effective against whiteflies and safe for tomato plants. On the other hand, Introducing natural enemies of whiteflies, such as predatory insects (e.g., ladybugs) or parasitic wasps, can help keep whitefly populations in check; Note: If you would like a more organic option for controlling cedar apple rust you can use neem oil, derived from the neem tree, which has antifungal properties; 3. Avoid planting tomatoes in the same location year after year. Rotate crops to disrupt the life cycle of whiteflies and reduce the buildup of the virus in the soil; 4. Eliminate weeds that may serve as alternative hosts for whiteflies and the virus; 5. Implementing good agricultural practices, such as proper spacing between plants, can enhance air circulation and reduce the likelihood of whitefly infestations; 6. Regularly inspect tomato plants for symptoms of TYLCV; 7. Some plants act as natural repellents for whiteflies. Intercropping tomatoes with plants like marigolds or basil can help deter whiteflies; 8. Adjust environmental factors such as temperature and humidity to create conditions less favorable for whitefly proliferation.</p>
+      </div>
+    </section>
+  </main>
+ 
+</body>
+</html>
